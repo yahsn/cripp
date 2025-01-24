@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>for the sweedest one</title>
+    <link rel="icon" type="image/x-icon" href="images/hi.ico">
+    
+
+    <style>
+        .letter:hover {
+          animation: shake 0.5s;
+          animation-iteration-count: infinite;
+          cursor:url('heartt.png'), auto
+        }
+        
+        @keyframes shake {
+          0% { transform: translate(1px, 1px) rotate(0deg); }
+          10% { transform: translate(-1px, -2px) rotate(-1deg); }
+          20% { transform: translate(-3px, 0px) rotate(1deg); }
+          30% { transform: translate(3px, 2px) rotate(0deg); }
+          40% { transform: translate(1px, -1px) rotate(1deg); }
+          50% { transform: translate(-1px, 2px) rotate(-1deg); }
+          60% { transform: translate(-3px, 1px) rotate(0deg); }
+          70% { transform: translate(3px, 1px) rotate(-1deg); }
+          80% { transform: translate(-1px, -1px) rotate(1deg); }
+          90% { transform: translate(1px, 2px) rotate(0deg); }
+          100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        </style>
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background-image: url('heart.gif');
+            background-size: 400px;
+            background-repeat: repeat;
+            background-position: center;
+            cursor: url('heartt.png'), default;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: 2px solid #000000;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            cursor: url('heartt.png'), auto;
+            z-index:4
+
+        }
+        
+        button:hover {
+            background-color: #8b1628;
+            cursor: url('heartt.png'), auto;
+            z-index:4
+
+        }
+       
+        .falling-image {
+            position: absolute;
+            animation: fall 3s linear infinite;
+            top: -100px 
+        }
+        @keyframes fall {
+            from {
+                transform: translateY(-100px);
+            }
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+
+    <script>
+        function startFlood() {
+            const music = document.getElementById('music');
+            music.play();
+
+            for (let i = 20; i < 50; i++) { 
+                const img = document.createElement('img');
+                img.src = 'IMG_0559.png'; 
+                img.classList.add('falling-image');
+                img.style.left = Math.random() * 100 + 'vw'; 
+                img.style.animationDuration = Math.random() * 1 + 4 + 's'; 
+                document.body.appendChild(img);
+
+                const size = Math.random() * 20 + 100;
+                img.style.width = size + 'px';
+                img.style.height = size + 'px';
+
+                const maxLeft = window.innerWidth - size;
+                img.style.left = Math.random() * maxLeft + 'px'; //i put anything i can find on web idk coding ;-;
+
+
+                // Remove the image after animation ends
+                img.addEventListener('animationend', () => {
+                    img.remove();
+                });
+            }
+        }
+    </script>
+
+<style>
+    .div1 {
+      width: 320px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid rgb(0, 0, 0);
+      position: absolute;
+      margin-top: -500px;
+      margin-left: 20px;
+      background-color: rgba(149, 183, 180, 0.449)
+    }
+
+    .div2 {
+      width: 320px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid rgb(0, 0, 0);
+      position: absolute;
+      margin-top: -452px;
+      margin-left: 280px;
+      background-color: rgba(184, 82, 153, 0.5)
+    }
+
+    .div3 {
+      width: 320px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid rgb(0, 0, 0);
+      position: absolute;
+      margin-top: -500px;
+      margin-left: 76%;
+      background-color: rgba(149, 183, 180, 0.449)
+    }
+
+    .div4 {
+      width: 320px;
+      height: 30px;
+      padding: 10px;
+      border: 1px solid rgb(0, 0, 0);
+      position: absolute;
+      margin-top: -450px;
+      margin-left: 60%;
+      background-color: rgba(184, 82, 153, 0.5)
+    }
+    
+    </style>
+    
+</head>
+<body>
+    <h1>I love you so much</h1>
+    <img src="images/IMG_0557.png" alt="me-and-my-boyfriend:3" width="420" height="420" position="absolute">
+    <br>
+    <button onclick="startFlood()">Click on Me :3</button>
+    <audio id="music" src="images/City-Of-Stars.mp3"></audio>
+    <div class="div1">i don't think anyone has loved anything more than i love you</div>
+    <div class="div2">and now i'm thinking if i'm kinda corny for making this website</div>
+    <div class="div3">as long as this can show you how obsessed i am with you, it's okay</div>
+    <div class="div4">you're my favorite person and i want you</div>
+    <img src="images/download.jpg" alt="us:3" style="width:430px;object-fit:cover;margin-top:-300px;margin-left:-48%;position:absolute;z-index:-2">
+    <img src="images/birb.png" alt="me" style="width:700px;object-fit:cover;margin-top:-350px;margin-left:-4%;position:absolute;z-index:-1;">
+    <img src="images/loaf.png" alt="cars" style="width:1000px;object-fit:cover;top:524px;margin-left:-38%;position:absolute;z-index:-1">
+    <img src="images/pig.png" alt="pingu" style="width:200px;object-fit:cover;bottom:-20px;right:-20px;position:absolute;">
+    <img src="images/pigg.png" alt="ping" style="width:100px;object-fit:cover;top:570px;left:25px;position:absolute">
+
+    <a href="a letter.html">
+        <img src="images/_png___moodboardpngs-removebg-preview.png" alt="a letter for my boyfriend" style="width:120px;object-fit:cover;top:17%;left:10%;position:absolute;z-index: 2;" class="letter">
+    </a>
+
+    <img src="images/stars.png" alt="stars" style="width:120px;object-fit:cover;top:450px;left:37%;position:absolute;">
+
+    
+
+    
+    <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <p>ILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILY
+        ILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILY
+        ILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILY
+        ILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILY
+        ILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILY
+        ILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILY
+        ILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILY
+        ILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILYILY
+        
+    </p>
+
+
+</body>
+</html>
